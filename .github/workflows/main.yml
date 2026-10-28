@@ -29,12 +29,12 @@ jobs:
     - name: Test Data 2
       run: |
         python find_lowest_number.py test_data/test2_input.txt test2_output.txt
-        cat test2_output.txt
-        cat test_data/test2_expected.txt
+        less test2_output.txt
+        less test_data/test2_expected.txt
     - name: Test Data 3
       run: |
         python find_lowest_number.py test_data/test3_input.txt test3_output.txt
-        cat test3_output.txt
-        cat test_data/test3_expected.txt
+        less test3_output.txt
+        less test_data/test3_expected.txt
         diff test_data/test3_expected.txt test3_output.txt
 
