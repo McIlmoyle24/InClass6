@@ -25,4 +25,4 @@ jobs:
     - name: Test
       run: |
         python find_lowest_number.py test_data/test1_input.txt test1_output.txt
-        diff test_data/test1_input.txt test1_output.txt
+        diff test_data/test1_expected.txt test1_output.txt
